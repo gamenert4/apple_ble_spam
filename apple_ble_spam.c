@@ -467,6 +467,17 @@ static Payload
                      .type = ContinuityTypeProximityPair,
                      .data = {.proximity_pair = {.prefix = 0x01, .model = 0x1620}},
                  }},
+
+    {.title = "Speaker Setup",
+     .text = "Modal, unlocked, long range",
+     .random = false,
+     .msg =
+         {
+             .type = ContinuityTypeNearbyAction,
+             .data = {.nearby_action = {.flags = 0xC0, .type = 0x0B}},
+         }},
+
+
 };
 
 #define PAYLOAD_COUNT ((signed)COUNT_OF(payloads))
