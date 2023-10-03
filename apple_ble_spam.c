@@ -67,7 +67,7 @@ static Payload
              .data = {.nearby_action = {.flags = 0xC0, .type = 0x04}},
          }},
     {.title = "Watch Setup",
-     .text = "",
+     .text = "test",
      .random = false,
      .msg =
          {
@@ -186,7 +186,7 @@ static Payload
              .type = ContinuityTypeNearbyInfo,
              .data = {.nearby_info = {}},
          }},
-#endif
+
             {.title = "Lockup Crash",
              .text = "iOS 17, locked, long range",
              .random = false,
